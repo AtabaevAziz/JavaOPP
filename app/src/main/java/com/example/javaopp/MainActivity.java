@@ -6,12 +6,19 @@ import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
+    //private
+    //package access
+    //protected
+
     Dog myDog;
+    int z;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        z = z++;
 
         myDog = new Dog(4, "Rex");
         myDog.talk();
@@ -28,14 +35,28 @@ public class MainActivity extends AppCompatActivity {
         chappi.talk();
 
         Wolf wolf = new Wolf();
+        wolf.name = "Akella";
+
 
         wolf.breathe();
         wolf.talk();
         wolf.isAlive = true;
-        wolf.name = "Akella";
         Log.i("isAlive", String.valueOf(wolf.numberOfLegs));
         Log.i("breathe()", "My name is " + wolf.name + " and " + wolf.breathe());
 
+    }
+
+    void method(double x, int y) {
+        int a;
+        a = 1;
+        a = y + 1;
+        double d = x * 2;
+        z = a + y;
+    }
+
+    void method1() {
+        int a;
+        a = 1;
     }
 }
 
