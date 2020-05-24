@@ -7,7 +7,7 @@ import android.util.Log;
 //Local class
 //Anonymous class
 
-public class Dog extends Animal {
+public abstract class Dog extends Animal {
     private int age;
     String name;
     final static int numberOfLegs = 4;

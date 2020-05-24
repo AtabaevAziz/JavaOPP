@@ -1,10 +1,14 @@
 package com.example.javaopp;
 
-public class Animal {
+import android.util.Log;
+
+public abstract class Animal {
     int numberOfLegs;
     boolean isAlive;
 
-    public String breathe(){
-        return "I can breathe";
+    abstract public void draw();
+
+    public void breathe() {
+        Log.i("breathe()", "I can breathe");
     }
 }
